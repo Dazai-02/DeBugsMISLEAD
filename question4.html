@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewreport"
+        content="width-device-width,
+        initial-scale=1.0">
+        <title> Truth Voting System 
+        </title>
+        <style>
+          .Container
+          {
+            max-width: 600px;
+            margin: 25px;
+            text-align: center;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0 0 0 0.1);
+            background-color: #f9f9f9;
+            font-family: Impact, Haettenschweiler, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url('https://img.freepik.com/free-vector/indian-flag-theme-independence-day-15th-august-celebration-background_1055-18094.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1712016000&semt=ais');
+background-repeat: no-repeat;
+background-size: cover;
+          } 
+          .votes
+          {
+            margin-top: 20px;
+          }
+          button
+          {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: rgb(123, 155, 230);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+
+            
+          }
+          button:hover
+          {
+            background-color: #0056b3;
+          }
+          body{
+            background-image:url('https://media.istockphoto.com/id/598814748/vector/mandala-retro-background.jpg?s=612x612&w=0&k=20&c=1UPW9HFfUrEAtCtv4UaJWz4svkCxm1U-_OQvwinPoR0=');
+            background-position:center;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+          .navigation1 {
+        margin-left: 1000px;
+        }
+        .navigation2 {
+        margin-left: 450px;
+        margin-top: -40px;
+        }
+
+          
+          
+            
+        </style>
+    </head>
+    <body>
+        <div class="Container">
+            <h1> Despite the fact its economy is now the fifth largest in the world, India has consistently ranked between 118th and 144th in the UN “happiness index” report among about 150 countries</h1>
+            <p> People should believe......</p>
+            <div class="Votes">
+                <button id="upvote-button">UPVOTE</button>
+                <span id="upvote-count">0</span>
+                <button id="downvote-button">DOWNVOTE</button>  
+                <span id="downvote-count">0</span>        </div>
+        </div>
+        <div class="navigation1">
+            <a href="http://127.0.0.1:5500/vote.html/question3.html"> <button id="back-button">BACK</button></a>
+             </div>
+             <div class="navigation2">
+
+            
+             <button onclick="myFunction()">NEXT</button>
+                <script>
+                    function myFunction() {
+                      location.replace("http://127.0.0.1:5500/vote.html/question5.html")
+                    }
+                    </script>
+                    <script>
+                      var upvoteCount = 0;
+                      var downvoteCount = 0;
+                  
+                      // Function to handle upvoting
+                      function upvote() {
+                          upvoteCount++;
+                          document.getElementById("upvote-count").textContent = upvoteCount;
+                      }
+                  
+                      // Function to handle downvoting
+                      function downvote() {
+                          downvoteCount++;
+                          document.getElementById("downvote-count").textContent = downvoteCount;
+                      }
+                  
+                      // Event listener for the upvote button
+                      document.getElementById("upvote-button").addEventListener("click", upvote);
+                  
+                      // Event listener for the downvote button
+                      document.getElementById("downvote-button").addEventListener("click", downvote);
+                  </script>
+ 
+        </div>
+    </body>
+</html>'
